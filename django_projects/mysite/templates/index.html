@@ -1,0 +1,12 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'mysite/style.css' %}">
+<h1> Welcome to Polls!</h1>
+
+<p>
+    Discover interesting questions, cast your vote, and see what others think.
+</p>
+
+<form action="{% url 'polls:index' %}">
+    <button type="button">Start Voting</button>
+
+</form>
